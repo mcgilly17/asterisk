@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+# Run lint-staged (Biome formatting and linting)
+npx lint-staged
+
+# Run TypeScript type checking
+npm run type-check
