@@ -1,0 +1,30 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 1.0.0 (2025-10-17)
+
+* fix: Add repository field to package.json ([83964a0](https://github.com/mcgilly17/asterisk/commit/83964a0))
+* fix: Configure GitHub Actions permissions for semantic-release ([6ce1f72](https://github.com/mcgilly17/asterisk/commit/6ce1f72))
+* fix: Configure Next.js Image to allow Figma assets ([5f09ee4](https://github.com/mcgilly17/asterisk/commit/5f09ee4))
+* fix: Correct JSON syntax error in semantic-release config ([1b19814](https://github.com/mcgilly17/asterisk/commit/1b19814))
+* feat: Add ASCII ambient background system ([e135b3c](https://github.com/mcgilly17/asterisk/commit/e135b3c))
+* feat: Add design system tokens from Figma ([9597c1a](https://github.com/mcgilly17/asterisk/commit/9597c1a))
+* feat: Add Framer Motion animation utilities ([7a51520](https://github.com/mcgilly17/asterisk/commit/7a51520))
+* feat: Add shadcn/ui configuration and utilities ([03039a3](https://github.com/mcgilly17/asterisk/commit/03039a3))
+* feat: Build website sections and components ([3bd56c8](https://github.com/mcgilly17/asterisk/commit/3bd56c8))
+* feat: Integrate ASCII background with transparent layout ([5a9c43f](https://github.com/mcgilly17/asterisk/commit/5a9c43f))
+* feat: Update theme with Figma design tokens ([6316cbb](https://github.com/mcgilly17/asterisk/commit/6316cbb))
+* chore: Add devenv build artifacts to gitignore ([4e02bae](https://github.com/mcgilly17/asterisk/commit/4e02bae))
+* chore: Add devenv.lock to gitignore ([a185af4](https://github.com/mcgilly17/asterisk/commit/a185af4))
+* chore: Install shadcn/ui dependencies ([24a960c](https://github.com/mcgilly17/asterisk/commit/24a960c))
+* chore(biome): Enhance configuration with comprehensive rules ([6d711e8](https://github.com/mcgilly17/asterisk/commit/6d711e8))
+* chore(commitlint): Add configuration for conventional commits ([4f37ace](https://github.com/mcgilly17/asterisk/commit/4f37ace))
+* chore(deps): Add commit tooling and semantic release ([13b5545](https://github.com/mcgilly17/asterisk/commit/13b5545))
+* chore(husky): Set up git hooks for commit validation ([c109505](https://github.com/mcgilly17/asterisk/commit/c109505))
+* chore(release): Configure semantic-release automation ([85725ec](https://github.com/mcgilly17/asterisk/commit/85725ec))
+* chore(vercel): Disable automatic deployments ([c26ac50](https://github.com/mcgilly17/asterisk/commit/c26ac50))
+* docs: Add comprehensive project documentation and SOPs ([f133093](https://github.com/mcgilly17/asterisk/commit/f133093))
+* dx: Add devenv configuration for Nix development environment ([ae3c97c](https://github.com/mcgilly17/asterisk/commit/ae3c97c))
+* ci: Add GitHub Actions workflows for CI/CD ([ab715a4](https://github.com/mcgilly17/asterisk/commit/ab715a4))
+* Initial commit from Create Next App ([23c6572](https://github.com/mcgilly17/asterisk/commit/23c6572))
