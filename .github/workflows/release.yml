@@ -10,13 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     # Only run after CI passes
     needs: []
+    permissions:
+      contents: write # Allow creating releases and pushing tags
+      issues: write # Allow commenting on issues
+      pull-requests: write # Allow commenting on PRs
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for semantic-release
-          persist-credentials: false
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
