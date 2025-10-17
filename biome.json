@@ -3,29 +3,19 @@
   "vcs": {
     "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": true
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
   },
   "files": {
-    "ignoreUnknown": true,
-    "includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+    "ignoreUnknown": false,
+    "includes": ["src/**", "!node_modules", "!.next", "!dist", "!build", "!.vercel"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "indentWidth": 2
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "suspicious": {
-        "noUnknownAtRules": "off"
-      }
-    },
-    "domains": {
-      "next": "recommended",
-      "react": "recommended"
-    }
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf"
   },
   "assist": {
     "actions": {
@@ -33,5 +23,107 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "warn",
+        "noForEach": "off",
+        "useLiteralKeys": "error"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error",
+        "useExhaustiveDependencies": "warn",
+        "useHookAtTopLevel": "error"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useImportType": "error",
+        "useNodejsImportProtocol": "error",
+        "useNumberNamespace": "error",
+        "useTemplate": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noArrayIndexKey": "warn",
+        "noUnknownAtRules": "off",
+        "useAwait": "error"
+      },
+      "performance": {
+        "noAccumulatingSpread": "warn",
+        "noDelete": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "trailingCommas": "es5",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "indentWidth": 2
+    },
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": false
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.tsx", "**/*.jsx"],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "noAccessKey": "error",
+            "noAriaHiddenOnFocusable": "error",
+            "noAutofocus": "warn",
+            "noDistractingElements": "error",
+            "noHeaderScope": "error",
+            "noInteractiveElementToNoninteractiveRole": "error",
+            "noNoninteractiveElementToInteractiveRole": "error",
+            "noNoninteractiveTabindex": "error",
+            "noPositiveTabindex": "error",
+            "noRedundantAlt": "error",
+            "noRedundantRoles": "error",
+            "useAltText": "error",
+            "useAnchorContent": "error",
+            "useAriaActivedescendantWithTabindex": "error",
+            "useAriaPropsForRole": "error",
+            "useButtonType": "error",
+            "useHeadingContent": "error",
+            "useHtmlLang": "error",
+            "useIframeTitle": "error",
+            "useKeyWithClickEvents": "error",
+            "useKeyWithMouseEvents": "error",
+            "useValidAnchor": "error",
+            "useValidAriaProps": "error",
+            "useValidAriaRole": "error",
+            "useValidAriaValues": "error",
+            "useValidLang": "error"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noExplicitAny": "off"
+          }
+        }
+      }
+    }
+  ]
 }
